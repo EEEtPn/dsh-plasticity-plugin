@@ -10,7 +10,10 @@
     "url": "https://github.com/EEEtPn"
   },
   "contributors": [
-    "Renderer-side command snippets adapted from plasticity-mcp (MIT), https://github.com/Mesteriis/plasticity-mcp"
+    {
+      "name": "plasticity-mcp contributors",
+      "url": "https://github.com/Mesteriis/plasticity-mcp"
+    }
   ],
   "keywords": [
     "dsh",
