@@ -1,0 +1,17 @@
+# dsh-plasticity-plugin — profile bundle layer.
+#
+# 装法见 docs/INSTALL.md。常见三种：
+#   A. tarball（推荐）：plugin_manager install_bundle target=".../<pkg>.tgz"
+#      → 写 profile dependencies（file:…tgz）+ 在 dsh.profile.bundles 里保留本条目
+#   B. git 源：plugin_manager install_bundle target="https://github.com/EEEtPn/dsh-plasticity-plugin"
+#   C. 开发期手工目录：拷到 profile\node_modules\dsh-plasticity-plugin + bundles 加名字
+#      （能加载，但插件页会显示「未安装」）
+#
+# 不要用 `link:` 安装：Windows 下 pnpm 建的 junction 会被判 "untrusted mount point"，
+# pnpm 自己都读不了。tarball/git 会解包成真实目录，没有这个问题。
+#
+# 本文件只负责插入这一个 fiber；重复插入（比如 bundles 里出现两次）会导致同名工具重复注册。
+- insert:
+    - id: dsh-plasticity-plugin
+      name: 'dsh-plasticity-plugin'
+      config: {}

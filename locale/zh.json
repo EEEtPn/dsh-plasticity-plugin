@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plasticity CAD 直连",
+    "description": "在 Plasticity 26.1.3 里做原生 CAD 建模：读场景与 B-rep 测量、盒/柱/球、拉伸、布尔、圆角倒角、平移旋转缩放、撤销重做、STEP/STL/3MF/OBJ 导出、视口截图。单位全部 mm，所有写操作都走 Plasticity 自己的命令管线（可 Undo）。"
+  }
+}

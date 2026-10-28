@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Plasticity CAD bridge">
+  <title>Plasticity CAD bridge</title>
+  <g fill="none" stroke="#4F8CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- isometric solid block -->
+    <path d="M32 6 L56 19 L56 45 L32 58 L8 45 L8 19 Z" />
+    <path d="M32 6 L32 32" opacity="0.45" />
+    <path d="M8 19 L32 32 L56 19" />
+    <path d="M32 32 L32 58" opacity="0.45" />
+    <!-- drilled cylinder + filleted corner accents -->
+    <ellipse cx="32" cy="20" rx="9" ry="4.5" />
+    <path d="M23 20 L23 27 A9 4.5 0 0 0 41 27 L41 20" />
+    <circle cx="32" cy="20" r="1.6" fill="#4F8CFF" stroke="none" />
+  </g>
+</svg>

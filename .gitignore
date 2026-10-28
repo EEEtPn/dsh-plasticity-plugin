@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build / packaging output
+*.tgz
+dist/
+pack/
+
+# logs & local state
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# local artifacts from live verification
+.dsh-plasticity/
+*.local.json

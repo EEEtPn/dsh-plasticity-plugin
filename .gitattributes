@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+*.png binary
+*.svg text eol=lf
+*.step binary
+*.stl binary
+*.tgz binary

@@ -1,0 +1,75 @@
+{
+  "name": "dsh-plasticity-plugin",
+  "version": "0.2.0",
+  "description": "DSH × Plasticity 3D 直连插件：自建 Electron CDP 桥，在 Plasticity 26.1.3 里做原生 CAD 建模（场景读取、B-rep 测量、盒/柱/球、拉伸、布尔、圆角倒角、变换、撤销重做、STEP/STL/3MF/OBJ 导出、视口截图、相机取景）。单位全部 mm，所有写操作走 Plasticity 自己的命令管线（可 Undo）。",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "EEEtPn",
+    "url": "https://github.com/EEEtPn"
+  },
+  "contributors": [
+    "Renderer-side command snippets adapted from plasticity-mcp (MIT), https://github.com/Mesteriis/plasticity-mcp"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plasticity",
+    "cad",
+    "brep",
+    "parasolid",
+    "nurbs",
+    "3d",
+    "ai-agent",
+    "electron",
+    "cdp"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.1.0-rc.7"
+  },
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "examples",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --import ./test/setup-hooks.mjs ./test/smoke.mjs",
+    "pack": "node scripts/pack.mjs",
+    "verify": "node scripts/verify-live.mjs",
+    "docs": "node --import ./test/setup-hooks.mjs ./scripts/gen-tools-docs.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EEEtPn/dsh-plasticity-plugin.git"
+  },
+  "homepage": "https://github.com/EEEtPn/dsh-plasticity-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/EEEtPn/dsh-plasticity-plugin/issues"
+  }
+}

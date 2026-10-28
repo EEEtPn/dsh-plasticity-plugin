@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plasticity CAD Bridge",
+    "description": "Native CAD modeling in Plasticity 26.1.3: scene reading and B-rep measurement, box/cylinder/sphere, extrude, boolean, fillet and chamfer, transform, undo/redo, STEP/STL/3MF/OBJ export, viewport screenshots. All units are mm and every write goes through Plasticity's own undoable command pipeline."
+  }
+}
